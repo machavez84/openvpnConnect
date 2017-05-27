@@ -21,7 +21,7 @@ echo $HOST
 echo $PORT
 echo $OVPN
 
-echo "Resolviendo dirección IP para $HOST..."
+echo "Resolving $HOST IP..."
 IP=$(nslookup $HOST | grep Address | tail -1 | cut -c 10-25)
 sleep 2s
 echo "The ip is: $IP"
